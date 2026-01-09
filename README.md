@@ -83,11 +83,10 @@ To support **10,000+ records** without performance degradation, the data model i
   - Food Item (e.g. Tomato)  
   - Location (e.g. ABC Daily)  
   Approximately 700 records.
-To avoid delegation issues with the <span style="color:red">Distinct()</span> function on large datasets, category lists are generated from **Food Master** instead of querying the transactional table directly.
+To avoid delegation issues with the <span style="color:red">`Distinct()`</span> function on large datasets, category lists are generated from **Food Master** instead of querying the transactional table directly.
 
 <details>
 <summary><b>Example screenshots and technical notes (click to expand)</b></summary>
-
 
 ##### Main Table: Food Track
 <img src="./images/mainTable.png" width="700" />
@@ -101,7 +100,7 @@ To avoid delegation issues with the <span style="color:red">Distinct()</span> fu
 ### 2. Performance Optimization
 #### Search Execution Button
 Instead of reloading galleries every time a dropdown or combobox value changes:
-- Selected values are stored using `UpdateContext()`  
+- Selected values are stored using **`UpdateContext()`**
 - A boolean variable (`ShowGallery`) controls gallery visibility  
 - Data is only loaded when the **Search** button is pressed  
 This significantly reduces unnecessary recalculation and improves responsiveness.
