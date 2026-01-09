@@ -1,4 +1,4 @@
-# Zero-Waste Tracker – Inventory Visibility & Waste Reduction App
+# ZeroWaste Tracker – Inventory Visibility & Waste Reduction App
 ![Power Apps](https://img.shields.io/badge/Power%20Apps-Canvas-blue?logo=powerapps)
 ![Dataverse](https://img.shields.io/badge/Dataverse-Database-purple?logo=microsoft)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
@@ -55,10 +55,7 @@ The design focuses on clarity and speed, enabling users to spot issues at a glan
 
 ## System Architecture
 This application is built as a **single-page Canvas App** with a lightweight data model.
-
-Power Apps (Canvas App)
-   └── Food Track Table (Transactional data: Received / Used / Wasted)
-   └── Food Master Table (Reference data: Category / Item / Location)
+<img src="./images/architecture.png" width="700">
 
 All calculations and aggregations are handled on the client side using Power Fx.
 The design intentionally avoids complex external dependencies to ensure fast performance and easy maintainability.
@@ -83,7 +80,7 @@ To support **10,000+ records** without performance degradation, the data model i
   - Food Item (e.g. Tomato)  
   - Location (e.g. ABC Daily)  
   Approximately 700 records.
-To avoid delegation issues with the <span style="color:red">`Distinct()`</span> function on large datasets, category lists are generated from **Food Master** instead of querying the transactional table directly.
+To avoid delegation issues with the **`Distinct()`** function on large datasets, category lists are generated from **Food Master** instead of querying the transactional table directly.
 
 <details>
 <summary><b>Example screenshots and technical notes (click to expand)</b></summary>
