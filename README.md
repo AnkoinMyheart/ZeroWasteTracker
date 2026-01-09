@@ -116,9 +116,9 @@ This significantly reduces unnecessary recalculation and improves responsiveness
 #### On-demand Child Gallery Calculation
 Child gallery formulas are executed **only when expande** to reduce unnecessary processing.
 
-- `IsExpanded` flag is added via `AddColumns()`
+- `IsExpanded` flag is added via **`AddColumns()`**
 - Set to true when drill-down is opened
-- Heavy `LookUp()` runs **only if expanded**
+- Heavy **`LookUp()`** runs **only if expanded**
 
 <details>
 <summary><b>Example screenshots and technical notes (click to expand)</b></summary>
