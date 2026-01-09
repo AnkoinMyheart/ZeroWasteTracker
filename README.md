@@ -1,4 +1,4 @@
-# ZeroWaste Tracker – Inventory Visibility & Waste Reduction App
+# Zero-Waste Tracker – Inventory Visibility & Waste Reduction App
 ![Power Apps](https://img.shields.io/badge/Power%20Apps-Canvas-blue?logo=powerapps)
 ![Dataverse](https://img.shields.io/badge/Dataverse-Database-purple?logo=microsoft)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
